@@ -31,6 +31,7 @@ LampAppliance.prototype.switchEconomy = function(mode){
   economyMode = mode;
 }
 
+IronAppliance.weight = 2000;
 IronAppliance.color = "black";
 IronAppliance.overheatingProtection = false;
 IronAppliance.prototype.switchProtection = function(mode){
