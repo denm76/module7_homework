@@ -51,7 +51,6 @@ const amdComputer = new ComputerAppliance(2000);
 gpLamp.enabled(true);
 philipsIron.enabled(true);
 amdComputer.enabled(false);
-console.log(gpLamp.status, philipsIron.status, amdComputer.status);
 
 gpLamp.switchEconomy(true);
 philipsIron.switchProtection(true);
