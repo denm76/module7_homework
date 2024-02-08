@@ -5,19 +5,19 @@
 
 // Таких приборов должно быть как минимум два (например, настольная лампа и компьютер). Выбрав прибор, подумайте, какими свойствами он обладает.
 
-function Appliance(power){
+function Appliance(power) {
   this.power = power,
-  this.weight = 0,
-  this.status = false
+    this.weight = 0,
+    this.status = false
 }
 
-Appliance.prototype.enabled = function(status){
-   status = false;
+Appliance.prototype.enabled = function (status) {
+  status = false;
 }
 
-function LampAppliance(power){this.power = power}
-function IronAppliance(power){this.power = power}
-function ComputerAppliance(power){this.power = power}
+function LampAppliance(power) { this.power = power }
+function IronAppliance(power) { this.power = power }
+function ComputerAppliance(power) { this.power = power }
 
 LampAppliance.prototype = new Appliance(40);
 IronAppliance.prototype = new Appliance(1000);
@@ -27,20 +27,20 @@ LampAppliance.weight = 30;
 LampAppliance.diameter = 150;
 LampAppliance.material = "hard plastic";
 LampAppliance.economyMode = false;
-LampAppliance.prototype.switchEconomy = function(mode){
+LampAppliance.prototype.switchEconomy = function (mode) {
   economyMode = mode;
 }
 
 IronAppliance.weight = 2000;
 IronAppliance.color = "black";
 IronAppliance.overheatingProtection = false;
-IronAppliance.prototype.switchProtection = function(mode){
+IronAppliance.prototype.switchProtection = function (mode) {
   overheatingProtection = mode;
 }
 
 ComputerAppliance.isWiFiModule = true;
 ComputerAppliance.sleepMode = false;
-ComputerAppliance.prototype.sleepModeEnabled = function(mode){
+ComputerAppliance.prototype.sleepModeEnabled = function (mode) {
   sleepMode = mode;
 }
 
