@@ -6,7 +6,7 @@
 // Таких приборов должно быть как минимум два (например, настольная лампа и компьютер). Выбрав прибор, подумайте, какими свойствами он обладает.
 
 function Appliance(power) {
-  this.power = power,
+    this.power = power,
     this.weight = 0,
     this.status = false
 }
