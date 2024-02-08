@@ -44,8 +44,8 @@ ComputerAppliance.prototype.sleepModeEnabled = function (mode) {
   sleepMode = mode;
 }
 
-gpLamp = new LampAppliance(60);
-philipsIron = new IronAppliance(1500);
+const gpLamp = new LampAppliance(60);
+const philipsIron = new IronAppliance(1500);
 gpLamp.enabled(true);
 philipsIron.enabled(true);
 
