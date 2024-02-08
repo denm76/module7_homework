@@ -11,8 +11,8 @@ function Appliance(power) {
     this.status = false
 }
 
-Appliance.prototype.enabled = function (status) {
-  status = false;
+Appliance.prototype.enabled = function (mode) {
+  this.status = mode;
 }
 
 function LampAppliance(power) { this.power = power }
@@ -46,8 +46,12 @@ ComputerAppliance.prototype.sleepModeEnabled = function (mode) {
 
 const gpLamp = new LampAppliance(60);
 const philipsIron = new IronAppliance(1500);
+const amdComputer = new ComputerAppliance(2000);
+
 gpLamp.enabled(true);
 philipsIron.enabled(true);
+amdComputer.enabled(false);
+console.log(gpLamp.status, philipsIron.status, amdComputer.status);
 
 gpLamp.switchEconomy(true);
 philipsIron.switchProtection(true);
