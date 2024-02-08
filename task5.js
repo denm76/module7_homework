@@ -23,7 +23,7 @@ class LampAppliance extends Appliance {
   }
 
   switchEconomy(mode) {
-    economyMode = mode;
+    this.economyMode = mode;
   }
 }
 
@@ -36,7 +36,7 @@ class IronAppliance extends Appliance {
   }
 
   switchProtection(mode) {
-    overheatingProtection = mode;
+    this.overheatingProtection = mode;
   }
 }
 
@@ -48,7 +48,7 @@ class ComputerAppliance extends Appliance {
   }
 
   sleepModeEnabled(mode) {
-    sleepMode = mode;
+    this.sleepMode = mode;
   }
 }
 
@@ -61,6 +61,7 @@ philipsIron.enabled(true);
 
 gpLamp.switchEconomy(true);
 philipsIron.switchProtection(true);
+console.log(gpLamp.economyMode);
 
 
 console.log(`Summary power of enabled devices is ${gpLamp.power + philipsIron.power} watts`);

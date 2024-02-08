@@ -28,20 +28,20 @@ LampAppliance.diameter = 150;
 LampAppliance.material = "hard plastic";
 LampAppliance.economyMode = false;
 LampAppliance.prototype.switchEconomy = function (mode) {
-  economyMode = mode;
+  this.economyMode = mode;
 }
 
 IronAppliance.weight = 2000;
 IronAppliance.color = "black";
 IronAppliance.overheatingProtection = false;
 IronAppliance.prototype.switchProtection = function (mode) {
-  overheatingProtection = mode;
+  this.overheatingProtection = mode;
 }
 
 ComputerAppliance.isWiFiModule = true;
 ComputerAppliance.sleepMode = false;
 ComputerAppliance.prototype.sleepModeEnabled = function (mode) {
-  sleepMode = mode;
+  this.sleepMode = mode;
 }
 
 const gpLamp = new LampAppliance(60);
